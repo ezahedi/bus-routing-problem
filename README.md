@@ -2,6 +2,8 @@
 
 ## Short review
 
+![alt tag](https://raw.githubusercontent.com/ezahedi/bus-routing-problem/master/points.png)
+
 ## Plan of attack
 
 My solution consists of the following steps:
