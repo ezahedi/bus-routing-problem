@@ -7,7 +7,7 @@ evolutionary framework to attack the problem. As the data is shown as follows:
 
 ![alt tag](https://raw.githubusercontent.com/ezahedi/bus-routing-problem/master/points.png)
 
-where the green, red and blu show the riders location, rider destinations and potential bus stops, respectively.
+where the green, red and blu show the riders locations, riders destinations and potential bus stops, respectively.
 
 ## Plan of attack
 
@@ -33,8 +33,7 @@ chooses to get on a bus at stop `S_O` and get off at stop `S_D`.
 
 Using parallel search algorithm start from 'M' different `S_O` s. 
 These start bus stations are chosen biase which have more density.
-And then using BFS algorithm with three conditions that a bus goes from `S_O` to `S_O'`  
-if
+And then using BFS algorithm, a bus is going from `S_O` to `S_O'` if the following three condition satisfied
 
 `1)  d(s_o,s_d)  > d(s_o', s_d)`
 
