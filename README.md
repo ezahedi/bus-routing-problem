@@ -15,7 +15,7 @@ My solution consists of the following steps:
 
 - step 1: Partition
 
-I do grid partitioning the covered space to `1x1` squares since `0<d(O,S_o)+d(D,S_D)<2`
+I do grid partitioning the covered space to `1x1` squares since `0<d(O,S_O)+d(D,S_D)<2`
 and Find the squares which have more density.
 
 - step 2:  Select bus stops for origin
@@ -32,20 +32,21 @@ chooses to get on a bus at stop `S_O` and get off at stop `S_D`.
 - step 4: parallel search
 
 Using parallel search algorithm start from 'M' different `S_O` s. 
-These start bus stations are chosen biase which have more density.
+These start bus stations are chosen in a bias way that have more density.
 And then using BFS algorithm, a bus is going from `S_O` to `S_O'` if the following three condition satisfied
 
-`1)  d(s_o,s_d)  > d(s_o', s_d)`
+`1)  d(S_O,S_D)  > d(S_O', S_D)`
 
-`2) L_{S_o} + d(s_o,s_o') < L_M`     , where `L_{S_o}` is the lenght of line containing bus stop `S_o`
+`2) L_{S_O} + d(S_O,S_O') < L_M`     , where `L_{S_O}` is the lenght of line containing bus stop `S_O`
 
-`3) d(s_o,s_o') + d(s_d, s_d') = Min_n [d(s_{o_n},s_o') + d(s_{d_n}, s_d')`, where `o_n` is in the `M`
+`3) d(S_O,S_O') + d(S_D, S_D') = Min_n [d(S_{O_n},s_O') + d(s_{D_n}, S_D)`, where `O_n` is in the `M`
 
 This helps to increase the benefit by getting these shortest paths.
 
 Step5) Termination
 
-a)repeating step 4, ten times.
+a)Repeating step 4, ten times.
+
 b)Select the one out of ten, with maximum profit.
 
 ## Results
