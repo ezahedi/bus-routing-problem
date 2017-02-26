@@ -58,4 +58,6 @@ routes more likely go from south west to north east. An output.txt is provided i
 
 `P_i` is a function whose value depends on the rider `i` and routh `R` and it is not clear for me since `R` is not used. When computing profit I assumed that rider `i` took maximum `R`.
 
-This algorithm is not working properly when we arrange the start points for the bus stops in which we have the most density and maybe the cost is too much. 
+This algorithm is not working properly when we arrange the start points for the bus stops in which we have the most density and maybe the cost is too much. So selecting the bus stops based on density of costumers is not working here! 
+As you can see the algorithm main_density.py. in repository, which has a bad result. 
+
