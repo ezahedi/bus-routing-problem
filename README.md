@@ -52,7 +52,7 @@ b) Select the one out of ten, with maximum profit.
 ## Results and discussion
 As we can see in the following figure
 
-![alt tag](https://raw.githubusercontent.com/ezahedi/bus-routing-problem/master/Routes.png)
+![alt tag](https://raw.githubusercontent.com/ezahedi/bus-routing-problem/master/routes.png)
 
 routes more likely go from south west to north east. An output.txt is provided in the repository in which the results and routes are shown. This result is given by running just one time algorithm and it maybe better if we do it in a for loop. The profit is a negetive number, that means this way of attack is not suggested. It might be modified by changing the maps, fitness functions as well. 
 
