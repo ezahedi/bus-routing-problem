@@ -39,14 +39,23 @@ And then using BFS algorithm, a bus is going from `S_O` to `S_O'` if the followi
 
 `2) L_{S_O} + d(S_O,S_O') < L_M`     , where `L_{S_O}` is the lenght of line containing bus stop `S_O`
 
-`3) d(S_O,S_O') + d(S_D, S_D') = Min_n [d(S_{O_n},s_O') + d(s_{D_n}, S_D)`, where `O_n` is in the `M`
+`3) d(S_O,S_O') + d(S_D, S_D') = Min_n [d(S_{O_n},S_O') + d(S_{D_n}, S_D)`, where `O_n` is in the `M`
 
 This helps to increase the benefit by getting these shortest paths.
 
-Step5) Termination
+- Step5: Termination
 
-a)Repeating step 4, ten times.
+a) Repeating step 4, ten times.
 
-b)Select the one out of ten, with maximum profit.
+b) Select the one out of ten, with maximum profit.
 
-## Results
+## Results and discussion
+As we can see in the following figure
+
+![alt tag](https://raw.githubusercontent.com/ezahedi/bus-routing-problem/master/Routes.png)
+
+routes more likely go from south west to north east. An output.txt is provided in the repository in which the results and routes are shown. This result is given by running just one time algorithm and it maybe better if we do it in a for loop. The profit is a negetive number, that means this way of attack is not suggested. It might be modified by changing the maps, fitness functions as well. 
+
+`P_i` is a function whose value depends on the rider `i` and routh `R` and it is not clear for me since `R` is not used. When computing profit I assumed that rider `i` took maximum `R`.
+
+This algorithm is not working properly when we arrange the start points for the bus stops in which we have the most density and maybe the cost is too much. 
