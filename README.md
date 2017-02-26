@@ -1,5 +1,7 @@
 # bus-routing-problem
 
+To run the code, please do `python main.py`. I used python packages `numpy`, `matplotlib` and `pandas`.
+
 ## Short review
 This problem is an NP-complete problem. So it can not be solved using either dynamic programming  or greedy algorithm. 
 Of course brute force algorithm is an option but it is time consuming. Here I use parallel search algorithm inspired by 
